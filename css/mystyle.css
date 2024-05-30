@@ -1,0 +1,373 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-image: url('../image/Bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.converter-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.converter-container h2 {
+    margin-bottom: 20px;
+}
+
+.converter-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.converter-container input[type="number"] {
+    padding: 10px;
+    width: calc(100% - 24px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.converter-container .result {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.converter-container .celsius-box {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    margin: 0 10px;
+}
+
+.contact img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10%;
+    transition: transform 0.3s;
+}
+
+.contact img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: Black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-text {
+    font-size: 2;
+    margin-bottom: 20px;
+    text-align: center;
+    color: Black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.gallery-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.hobby-section {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    color: Black;
+}
+
+.hobby-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.hobby-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hobby-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.hobby-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.hobby-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+.hobby-image {
+    margin-top: 10px;
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.education-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.column h2, .column h3 {
+    margin: 10px 0;
+}
+
+.education-logo {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+.video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+.about-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px; 
+        }
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.text-box h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+		
+.about-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+            width: 250px;
+        }
+
+.text {
+            flex: 1;
+        }
+
+section {
+            max-width: 800px;
+        }
+		
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
